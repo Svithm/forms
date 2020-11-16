@@ -20,6 +20,12 @@ body {
     width: 330px;
     display: inline-block;
 }
+input, 
+select,
+textarea,
+button {
+    box-sizing: border-box;
+}
 .form1 p {
     font-size: 20px;
     letter-spacing: 0px;
@@ -28,7 +34,8 @@ body {
     font-family: "Roboto";
     text-transform: uppercase;
 }
-input[type=text] {
+.input,
+.email {
     width: 100%;
     margin-bottom: 8px;
     padding: 16px;
@@ -39,12 +46,19 @@ input[type=text] {
     font-weight: 400;
     font-family: "Roboto";
 }
+input:focus {
+    outline: none;
+    filter: drop-shadow(0 0 2.5px rgba(62,106,255,0.55));
+    background-color: #ffffff;
+    border: 1px solid #3e6aff;
+}
 select {
     margin-bottom: 8px;
     padding: 16px;
-    width: 364px;
+    width: 100%;
     border-radius: 3px;
     border: 1px solid #cccccc;
+    appearance: none;
 }
 textarea {
     width: 100%;
@@ -54,9 +68,9 @@ textarea {
     border-radius: 3px;
     border: 1px solid #cccccc;
 }
-input[type=button] {
+input[type=submit] {
     padding: 16px;
-    width: 364px;
+    width: 100%;
     border-radius: 3px;
     border: none;
     filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
