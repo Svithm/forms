@@ -1,10 +1,22 @@
 @font-face {
-    font-family: 'Roboto Slab';
-    src: url('../fonts/RobotoSlab-Bold.eot');
-    src: url('../fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
-        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
-        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.eot');
+    src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff'),
+        url('../fonts/Roboto-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -20,13 +32,14 @@ body {
     width: 330px;
     display: inline-block;
 }
+/* перша форма */
 input, 
 select,
 textarea,
 button {
     box-sizing: border-box;
 }
-.form1 p {
+.name-form {
     font-size: 20px;
     letter-spacing: 0px;
     color: #b3b3b3;
@@ -41,18 +54,27 @@ button {
     padding: 16px;
     border-radius: 3px;
     border: 1px solid #cccccc;
+}
+.input:focus, 
+.email:focus,
+.select:focus,
+.textarea:focus {
+    outline: none;
+    filter: drop-shadow(0 0 2.5px rgba(62,106,255,0.55));
+    border: 1px solid #3e6aff;
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+input::placeholder,
+textarea::placeholder {
     font-size: 14px;
     color: #b3b3b3;
     font-weight: 400;
     font-family: "Roboto";
 }
-input:focus {
-    outline: none;
-    filter: drop-shadow(0 0 2.5px rgba(62,106,255,0.55));
-    background-color: #ffffff;
-    border: 1px solid #3e6aff;
-}
-select {
+.select {
     margin-bottom: 8px;
     padding: 16px;
     width: 100%;
@@ -60,7 +82,7 @@ select {
     border: 1px solid #cccccc;
     appearance: none;
 }
-textarea {
+.textarea {
     width: 100%;
     resize: vertical;
     margin-bottom: 8px;
@@ -68,7 +90,7 @@ textarea {
     border-radius: 3px;
     border: 1px solid #cccccc;
 }
-input[type=submit] {
+.submit {
     padding: 16px;
     width: 100%;
     border-radius: 3px;
@@ -80,4 +102,20 @@ input[type=submit] {
     font-weight: 700;
     font-family: "Roboto";
     text-align: center;
+}
+/* кінець першої форми */
+.form2 {
+    float: right;
+}
+.form06 {
+    border-radius: 5px;
+    filter: drop-shadow(0px 5px 6px rgba(0,0,0,0.15));
+    background-color: #fafafa;
+    border: 1px solid #e6e6e6;
+}
+.input06 {
+    padding: 14px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
 }

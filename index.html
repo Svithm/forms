@@ -13,18 +13,31 @@
         <div class="wrapper">
             <div class="row">
                 <div class="form1 colum">
-                    <p>01. Проста форма</p>
+                    <p class="name-form">01. Проста форма</p>
                     <form action="">
                         <label><input class="input" type="text" placeholder="Введіть ім'я"></label>
                         <label><input class="email" type="email" placeholder="Email"></label>
-                        <select name="sity">
+                        <select class="select" name="sity">
                             <option selected disabled value="vashe_misto">Ваше місто</option>
                             <option value="kiev">Київ</option> 
                             <option value="lviv">Львів</option>
                             <option value="khmelnitsky">Хмельницький</option>
                         </select>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Email"></textarea>
-                        <label><input type="submit" value="Зареєструватися"></label>
+                        <textarea class="textarea" name="" id="" cols="30" rows="10" placeholder="Email"></textarea>
+                        <label><input class="submit" type="submit" value="Зареєструватися"></label>
+                    </form>
+                </div>
+                <div class="form2 colum">
+                    <p class="name-form">06. Фіксована форма</p>
+                    <form class="form06" action="">
+                        <p><label for="login">Логін</label>
+                            <input id="login" class="input06" type="text"></p>
+                        <p><label for="pass">Пароль</label>
+                            <input id="pass" class="input06" type="text"></p>
+                        <p>Забули пароль?</p>
+                        <p><input type="checkbox">
+                            <label for="">Запам’ятати пароль</label></p>
+                        <p><input type="submit"></p>
                     </form>
                 </div>
             </div>
