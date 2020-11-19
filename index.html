@@ -19,7 +19,7 @@
                         <label><input class="email" type="email" placeholder="Email"></label>
                         <select class="select" name="sity">
                             <option selected disabled value="vashe_misto">Ваше місто</option>
-                            <option value="kiev">Київ</option> 
+                            <option value="kiev">Київ</option>
                             <option value="lviv">Львів</option>
                             <option value="khmelnitsky">Хмельницький</option>
                         </select>
@@ -27,19 +27,49 @@
                         <label><input class="submit" type="submit" value="Зареєструватися"></label>
                     </form>
                 </div>
-                <div class="form2 colum">
+                <div class="form2 colum2">
+                    <!-- старт 2-ї форми -->
                     <p class="name-form">06. Фіксована форма</p>
                     <form class="form06" action="">
-                        <p><label for="login">Логін</label>
+                        <p class="log">Логін</p>
+                        <p class="paragraf-input06">
                             <input id="login" class="input06" type="text"></p>
-                        <p><label for="pass">Пароль</label>
+                        <p class="pas">Пароль</p>
+                        <p class="paragraf-input06">
                             <input id="pass" class="input06" type="text"></p>
-                        <p>Забули пароль?</p>
-                        <p><input type="checkbox">
-                            <label for="">Запам’ятати пароль</label></p>
-                        <p><input type="submit"></p>
+                        <p class="answer">Забули пароль?</p>
+                        <p class="remember-password">
+                            <input class="rem-check" id="check" type="checkbox">
+                            <label for="check">Запам’ятати пароль</label></p>
+                        <p class="parag-submit06">
+                            <input class="submit06" type="submit" value="Увійти"></p>
                     </form>
                 </div>
+                <hr>
+            </div>
+            <div class="element">
+                <form action="">
+                    <p class="name-form">02. Елементи</p> <!-- Елементи -->
+                    <div class="colum3">
+                        <p><input class="radio-knopka" id="nova-poshta" type="radio" name="knopka">
+                            <label for="nova-poshta">Нова Пошта</label>
+                        </p>
+                        <p><input class="radio-knopka" id="runner" type="radio" name="knopka">
+                            <label for="runner">Кур’єр</label>
+                        </p>
+                        <p><input class="radio-knopka" id="pickup" type="radio" name="knopka">
+                            <label for="pickup">Самовивіз</label>
+                        </p>
+                    </div>
+                    <div class="colum4">
+                        <p><input class="checkbox" id="read" type="checkbox" name="knopka">
+                            <label for="read">Прочитав умови договору</label></p>
+                        <p><input class="checkbox" id="pdv" type="checkbox" name="knopka">
+                            <label for="pdv">Згідний з ПДВ 9%</label></p>
+                        <p><input class="checkbox" id="news" type="checkbox" name="knopka">
+                            <label for="news">Отримувати новини на ел. пошту</label></p>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
