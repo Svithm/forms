@@ -139,6 +139,8 @@ textarea::placeholder {
 }
 .textarea {
     width: 100%;
+    min-height: 50px;
+    max-height: 200px;
     resize: vertical;
     margin-bottom: 8px;
     padding: 16px;
@@ -475,6 +477,9 @@ textarea::placeholder {
 }
 .form-table .radio-knopka + label {
     padding-right: 24px;
+}
+.form-table tr:nth-child(6) td:first-child {
+    vertical-align: top;
 }
 /* 5 форма таблицею */
 .form-table2 table {

@@ -25,7 +25,7 @@
                                 <option value="khmelnitsky">Хмельницький</option>
                             </select>
                         </label>
-                        <textarea class="textarea" name="" id="" cols="30" rows="10" placeholder="Email"></textarea>
+                        <textarea class="textarea" cols="30" rows="10" placeholder="Email"></textarea>
                         <label><input class="submit" type="submit" value="Зареєструватися"></label>
                     </form>
                 </div>
@@ -59,7 +59,7 @@
                         <p><input class="radio-knopka" id="runner" type="radio" name="knopka">
                             <label for="runner">Кур’єр</label>
                         </p>
-                        <p><input class="radio-knopka" id="pickup" type="radio" name="knopka">
+                        <p><input disabled class="radio-knopka" id="pickup" type="radio" name="knopka">
                             <label for="pickup">Самовивіз</label>
                         </p>
                     </div>
@@ -68,7 +68,7 @@
                             <label for="read">Прочитав умови договору</label></p>
                         <p><input class="checkbox" id="pdv" type="checkbox" name="knopka">
                             <label for="pdv">Згідний з ПДВ 9%</label></p>
-                        <p><input class="checkbox" id="news" type="checkbox" name="knopka">
+                        <p><input disabled class="checkbox" id="news" type="checkbox" name="knopka">
                             <label for="news">Отримувати новини на ел. пошту</label></p>
                     </div>
                     <div class="element2">
@@ -130,19 +130,18 @@
                 <form action="">
                     <table>
                         <tr>
-                            <td>ФІО:</td>
-                            <td><label><input class="input" type="text" placeholder="Введіть ім'я"></label></td>
+                            <td><label for="enter-name">ФІО:</label></td>
+                            <td><input id="enter-name" class="input" type="text" placeholder="Введіть ім'я"></td>
                         </tr>
                         <tr>
-                            <td>Пароль:</td>
-                            <td><label><input class="input" type="password"
-                                        placeholder="Введіть не менше 6 символів"></label></td>
+                            <td><label for="enter-pass">Пароль:</label></td>
+                            <td><input id="enter-pass" class="input" type="password" placeholder="Введіть не менше 6 символів"></td>
                         </tr>
                         <tr>
-                            <td>Місто:</td>
+                            <td><label for="sity">Місто:</label></td>
                             <td>
                                 <label for="" class="select1">
-                                    <select class="select" name="sity">
+                                    <select id="sity" class="select" name="sity">
                                         <option selected disabled value="vashe_misto">Ваше місто</option>
                                         <option value="kiev">Київ</option>
                                         <option value="lviv">Львів</option>
@@ -167,9 +166,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Коментарій:</td>
-                            <td><textarea class="textarea" name="" id="" cols="30" rows="10"
-                                    placeholder="Email"></textarea></td>
+                            <td><label for="commit">Коментарій:</label></td>
+                            <td><textarea id="commit" class="textarea" name="" id="" cols="30" rows="10" placeholder="Email"></textarea></td>
                         </tr>
                         <tr>
                             <td></td>
@@ -186,16 +184,16 @@
                     <table class="table5">
                         <tr>
                             <td>
-                                <label>Прізвище та ім’я</label>
-                                <input class="input" type="text">
+                                <label for="fio">Прізвище та ім’я</label>
+                                <input id="fio" class="input" type="text">
                             </td>
                             <td>
-                                <label>Ел. пошта</label>
-                                <input class="input" type="text">
+                                <label for="mail">Ел. пошта</label>
+                                <input id="mail" class="input" type="text">
                             </td>
                             <td>
-                                <label>Телефон</label>
-                                <input class="input" type="text">
+                                <label for="tel">Телефон</label>
+                                <input id="tel" class="input" type="text">
                             </td>
                         </tr>
                         <tr>
@@ -205,8 +203,8 @@
                         </tr>
                         <tr>
                             <td>
-                                <label class="select1" for=""><span>Країна</span>
-                                    <select class="select" name="sity">
+                                <label for="kraina" class="select1" for=""><span>Країна</span>
+                                    <select id="kraina" class="select" name="sity">
                                         <option selected disabled value="vashe_misto">Ваше місто</option>
                                         <option value="kiev">Київ</option>
                                         <option value="lviv">Львів</option>
@@ -215,23 +213,23 @@
                                 </label>
                             </td>
                             <td colspan="2">
-                                <label><span>Адреса</span>
-                                    <input class="input" type="text">
+                                <label for="adres"><span>Адреса</span>
+                                    <input id="adres" class="input" type="text">
                                 </label>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label>Місто</label>
-                                <input class="input" type="text">
+                                <label for="city2">Місто</label>
+                                <input id="city2" class="input" type="text">
                             </td>
                             <td>
-                                <label>Будинок</label>
-                                <input class="input" type="text">
+                                <label for="bilding">Будинок</label>
+                                <input id="bilding" class="input" type="text">
                             </td>
                             <td>
-                                <label>Поштовий індек</label>
-                                <input class="input" type="text">
+                                <label for="pos-index">Поштовий індек</label>
+                                <input id="pos-index" class="input" type="text">
                             </td>
                         </tr>
                     </table>
