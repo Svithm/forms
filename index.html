@@ -17,26 +17,28 @@
                     <form action="">
                         <label><input class="input" type="text" placeholder="Введіть ім'я"></label>
                         <label><input class="email" type="email" placeholder="Email"></label>
-                        <select class="select" name="sity">
-                            <option selected disabled value="vashe_misto">Ваше місто</option>
-                            <option value="kiev">Київ</option>
-                            <option value="lviv">Львів</option>
-                            <option value="khmelnitsky">Хмельницький</option>
-                        </select>
+                        <label for="" class="select1">
+                            <select class="select" name="sity">
+                                <option selected disabled value="vashe_misto">Ваше місто</option>
+                                <option value="kiev">Київ</option>
+                                <option value="lviv">Львів</option>
+                                <option value="khmelnitsky">Хмельницький</option>
+                            </select>
+                        </label>
                         <textarea class="textarea" name="" id="" cols="30" rows="10" placeholder="Email"></textarea>
                         <label><input class="submit" type="submit" value="Зареєструватися"></label>
                     </form>
                 </div>
-                <div class="form2 colum2">
-                    <!-- старт 2-ї форми -->
+                <!-- старт 2-ї форми -->
+                <div class="form2 colum2 fix">
                     <p class="name-form">06. Фіксована форма</p>
                     <form class="form06" action="">
-                        <p class="log">Логін</p>
-                        <p class="paragraf-input06">
-                            <input id="login" class="input06" type="text"></p>
-                        <p class="pas">Пароль</p>
-                        <p class="paragraf-input06">
-                            <input id="pass" class="input06" type="text"></p>
+                        <p><label class="log"><span>Логін</span></label>
+                            <input id="login" class="input06" type="text">
+                        </p>
+                        <p><label class="pas"><span>Пароль</span></label>
+                            <input id="pass" class="input06" type="text">
+                        </p>
                         <p class="answer">Забули пароль?</p>
                         <p class="remember-password">
                             <input class="checkbox" id="check" type="checkbox">
@@ -124,7 +126,7 @@
             <div class="form-table">
                 <!--  форма таблицею -->
                 <p class="name-form">04. Форма таблицею</p>
-                <p>Заповніть усі необхідні поля</p>
+                <p class="title-form">Заповніть усі необхідні поля</p>
                 <form action="">
                     <table>
                         <tr>
@@ -138,12 +140,16 @@
                         </tr>
                         <tr>
                             <td>Місто:</td>
-                            <td><select class="select" name="sity">
-                                    <option selected disabled value="vashe_misto">Ваше місто</option>
-                                    <option value="kiev">Київ</option>
-                                    <option value="lviv">Львів</option>
-                                    <option value="khmelnitsky">Хмельницький</option>
-                                </select></td>
+                            <td>
+                                <label for="" class="select1">
+                                    <select class="select" name="sity">
+                                        <option selected disabled value="vashe_misto">Ваше місто</option>
+                                        <option value="kiev">Київ</option>
+                                        <option value="lviv">Львів</option>
+                                        <option value="khmelnitsky">Хмельницький</option>
+                                    </select>
+                                </label>
+                            </td>
                         </tr>
                         <tr>
                             <td>Стать:</td>
@@ -173,9 +179,9 @@
                 </form>
             </div>
             <hr>
-            <div class="form-table2">
+            <div class="form-table2 colum7">
                 <p class="name-form">05. Форма таблицею</p>
-                <p>Оформлення заявки</p>
+                <p class="title-form">Оформлення заявки</p>
                 <form action="">
                     <table class="table5">
                         <tr>
@@ -199,17 +205,19 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="">Країна</label>
-                                <select class="select" name="sity">
-                                    <option selected disabled value="vashe_misto">Ваше місто</option>
-                                    <option value="kiev">Київ</option>
-                                    <option value="lviv">Львів</option>
-                                    <option value="khmelnitsky">Хмельницький</option>
-                                </select>
+                                <label class="select1" for=""><span>Країна</span>
+                                    <select class="select" name="sity">
+                                        <option selected disabled value="vashe_misto">Ваше місто</option>
+                                        <option value="kiev">Київ</option>
+                                        <option value="lviv">Львів</option>
+                                        <option value="khmelnitsky">Хмельницький</option>
+                                    </select>
+                                </label>
                             </td>
                             <td colspan="2">
-                                <label>Телефон</label>
-                                <input class="input" type="text">
+                                <label><span>Адреса</span>
+                                    <input class="input" type="text">
+                                </label>
                             </td>
                         </tr>
                         <tr>
@@ -222,13 +230,22 @@
                                 <input class="input" type="text">
                             </td>
                             <td>
-                                <label>Поштовий індек</label>           
+                                <label>Поштовий індек</label>
                                 <input class="input" type="text">
                             </td>
                         </tr>
                     </table>
-                        <p><input class="checkbox" id="accept" type="checkbox" name="knopka">
-                            <label for="accept">Я погоджуюсь з правилами оплати та доставки товару</label></p>
+                    <p class="accept"><input class="checkbox" id="accept" type="checkbox" name="knopka">
+                        <label for="accept">Я погоджуюсь з правилами оплати та доставки товару</label></p>
+                    <hr>
+                    <p class="button-bottom"><label for="back-page">
+                            <input class="back-page" id="back-page" type="button" value="Повернутися назад">
+                        </label>
+                        <label for="make">
+                            <input class="make" id="make" type="submit" value="Оформити покупку">
+                        </label>
+                    </p>
+
                 </form>
             </div>
         </div>

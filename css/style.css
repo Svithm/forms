@@ -75,7 +75,11 @@ textarea {
     font-weight: 700;
     text-transform: uppercase;
 }
-
+.title-form {
+    font-size: 18px;
+    color: #1f222c;
+    font-weight: 700;
+}
 .input,
 .email {
     width: 100%;
@@ -108,7 +112,31 @@ textarea::placeholder {
     border: 1px solid #cccccc;
     appearance: none;
 }
-
+.select1 {
+    position: relative;
+}
+.select1::before {
+    content: '';
+    position: absolute;
+    border: 4px solid transparent;
+    border-right-color: #000;
+    border-bottom-color: #000;
+    right: 14px;
+    top: 4px;
+    transform: rotate(45deg);
+    z-index: 0;
+}
+.select1:hover:before {
+    transform: rotate(-315deg);
+}
+.select1 select{
+    appearance: none;
+    position: relative;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    z-index: 1;
+}
 .textarea {
     width: 100%;
     resize: vertical;
@@ -134,9 +162,12 @@ textarea::placeholder {
 /* кінець першої форми */
 /* початок 2-ї форми */
 .form2 {
-    float: right;
+    right:13.3%;
 }
-
+.fix {
+    position: fixed;
+    z-index: 2;
+}
 .form06 {
     border-radius: 5px;
     filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.15));
@@ -151,8 +182,6 @@ textarea::placeholder {
 
 .log,
 .pas {
-    margin-top: 0;
-    margin-bottom: 8px;
     font-size: 13px;
     color: #b3b3b3;
     font-weight: 400;
@@ -413,7 +442,7 @@ textarea::placeholder {
     left: -49px;
     top: -7px;
 }
-/* форма таблицею */
+/* форма таблицею 4 */
 .form-table td:first-child {
     width: 160px;
     padding: 20px 0;
@@ -444,11 +473,22 @@ textarea::placeholder {
     background-color: #2857f4;
     word-wrap: none;
 }
+.form-table .radio-knopka + label {
+    padding-right: 24px;
+}
 /* 5 форма таблицею */
 .form-table2 table {
     max-width: 680px;
     width: 100%;
     margin-left: -4px;
+}
+
+.form-table2 label {
+    position: relative;
+}
+.form-table2 span {
+    position: absolute;
+    top: -20px;
 }
 .form-table2 td {
     width: 33.3%;
@@ -456,7 +496,46 @@ textarea::placeholder {
 }
 .table5 label {
     display: inline-block;
+    width: 100%;
     padding-bottom: 6px;
     font-size: 13px;
     color: #b3b3b3;
+}
+.accept,
+.button-bottom,
+hr {
+    margin: 0;
+}
+.accept {
+    padding: 24px 0;
+}
+.button-bottom {
+    padding: 30px 0;
+}
+.back-page {
+    margin-bottom: 144px;
+    width: 180px;
+    padding: 16px;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #6e6f77;
+    font-weight: 700;
+}
+.make {
+    padding: 16px;
+    float: right;
+    border-radius: 3px;
+    background-color: #12d661;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+}
+.form-table2 tr:nth-child(2) td {
+    padding: 24px 4px 41px;
+}
+.form-table2 .select1::before {
+    top: 20px;
 }
