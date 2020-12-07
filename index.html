@@ -33,13 +33,18 @@
                 <div class="form2 colum2 fix">
                     <p class="name-form">06. Фіксована форма</p>
                     <form class="form06" action="">
-                        <p><label class="log"><span>Логін</span></label>
+                        <div class="">
+                            
+                                <input class="close" type="checkbox">
+                            
+                        </div>
+                        <p class="login"><label class="log"><span>Логін</span></label>
                             <input id="login" class="input06" type="text">
                         </p>
-                        <p><label class="pas"><span>Пароль</span></label>
+                        <p class="password"><label class="pas"><span>Пароль</span></label>
                             <input id="pass" class="input06" type="text">
                         </p>
-                        <p class="answer">Забули пароль?</p>
+                        <p class="answer"><a href="#">Забули пароль?</a></p>
                         <p class="remember-password">
                             <input class="checkbox" id="check" type="checkbox">
                             <label for="check">Запам’ятати пароль</label></p>
@@ -49,9 +54,10 @@
                 </div>
                 <hr>
             </div>
+            <!-- Елементи -->
             <div class="element">
                 <form action="">
-                    <p class="name-form">02. Елементи</p> <!-- Елементи -->
+                    <p class="name-form">02. Елементи</p> 
                     <div class="colum3">
                         <p><input class="radio-knopka" id="nova-poshta" type="radio" name="knopka">
                             <label for="nova-poshta">Нова Пошта</label>
@@ -86,8 +92,8 @@
                                     <input class="checkbox" id="sale" type="checkbox" name="knopka">
                                     <label for="sale">Розпродаж</label>
                                 </p>
-                                <p class="date">
-                                    <input cls type="date" id="data">
+                                <p >
+                                    <input class="date"  type="date" id="data">
                                 </p>
                             </div>
 
@@ -96,6 +102,7 @@
                 </form>
             </div>
             <hr>
+            <!-- стилізовані чекбокси -->
             <div class="style-check">
                 <div class="people colum5">
                     <p class="name-form">03. Стилізовані чекбокси</p>
@@ -124,7 +131,7 @@
             </div>
             <hr>
             <div class="form-table">
-                <!--  форма таблицею -->
+                <!--  форма таблицею 4 -->
                 <p class="name-form">04. Форма таблицею</p>
                 <p class="title-form">Заповніть усі необхідні поля</p>
                 <form action="">
@@ -159,7 +166,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Фото:</td>
+                            <td><label for="file">Фото:</label></td>
                             <td>
                                 <input class="file-select" id="file" type="file" value="Виберіть файл">
                                 <label for="file">Виберіть файл</label>
@@ -177,6 +184,7 @@
                 </form>
             </div>
             <hr>
+            <!-- форма таблицею 5 -->
             <div class="form-table2 colum7">
                 <p class="name-form">05. Форма таблицею</p>
                 <p class="title-form">Оформлення заявки</p>
