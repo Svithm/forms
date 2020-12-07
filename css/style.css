@@ -193,8 +193,9 @@ textarea::placeholder {
 .close {
     position: absolute;
     float: right;
-    right: 26px;
-    top: 7px;
+    right: 10px;
+    top: 71px;
+    z-index: 1;
 }
 .close:hover::before,
 .close:hover::after {
@@ -204,8 +205,8 @@ textarea::placeholder {
 .close::after {
     content: '';
     position: absolute;
-    left: 12px;
-    height: 12px;
+    left: 6px;
+    height: 13px;
     width: 2px;
     background-color: #b3b3b3;
 }
@@ -218,7 +219,8 @@ textarea::placeholder {
 .close:checked {
     display: none;
 }
-.close:checked ~ .login {
+.close:checked ~ .name-form,
+.close:checked ~ .form06 {
     display: none;
 }
 .form06 p {
