@@ -77,7 +77,6 @@ select,
 textarea {
     box-sizing: border-box;
 }
-
 .name-form {
     font-size: 20px;
     letter-spacing: 0px;
@@ -97,6 +96,7 @@ textarea {
     padding: 16px;
     border-radius: 3px;
     border: 1px solid #cccccc;
+    cursor: pointer;
 }
 
 .input:focus,
@@ -122,9 +122,13 @@ textarea::placeholder {
     border-radius: 3px;
     border: 1px solid #cccccc;
     appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
 }
 .select1 {
+    display: inline-block;
     position: relative;
+    width: 100%;
 }
 .select1::before {
     content: '';
@@ -133,7 +137,7 @@ textarea::placeholder {
     border-right-color: #000;
     border-bottom-color: #000;
     right: 14px;
-    top: 4px;
+    top: 19px;
     transform: rotate(45deg);
     z-index: 0;
 }
@@ -142,6 +146,7 @@ textarea::placeholder {
 }
 .select1 select{
     appearance: none;
+    -webkit-appearance: none;
     position: relative;
     background-color: transparent;
     outline: none;
@@ -173,6 +178,7 @@ textarea::placeholder {
 .submit:hover {
     filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
     background-color: #07be51;
+    cursor: pointer;
 }
 
 /* кінець першої форми */
@@ -183,6 +189,7 @@ textarea::placeholder {
 .fix {
     position: fixed;
     z-index: 2;
+    top: 0;
 }
 .form06 {
     border-radius: 5px;
@@ -222,6 +229,9 @@ textarea::placeholder {
 .close:checked ~ .name-form,
 .close:checked ~ .form06 {
     display: none;
+}
+.form2 .checkbox {
+    display:none;
 }
 .form06 p {
     padding-left: 24px;
@@ -390,6 +400,7 @@ textarea::placeholder {
 }
 .element2-date p {
     margin-left: 32px;
+    white-space: nowrap;
 }
 .date {
     padding: 16px;
