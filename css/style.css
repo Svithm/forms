@@ -96,7 +96,6 @@ textarea {
     padding: 16px;
     border-radius: 3px;
     border: 1px solid #cccccc;
-    cursor: pointer;
 }
 
 .input:focus,
@@ -113,6 +112,7 @@ textarea {
 input::placeholder,
 textarea::placeholder {
     color: #b3b3b3;
+    font-size: 14px;
 }
 
 .select {
@@ -123,7 +123,6 @@ textarea::placeholder {
     border: 1px solid #cccccc;
     appearance: none;
     -webkit-appearance: none;
-    cursor: pointer;
 }
 .select1 {
     display: inline-block;
@@ -150,18 +149,18 @@ textarea::placeholder {
     position: relative;
     background-color: transparent;
     outline: none;
-    cursor: pointer;
     z-index: 1;
 }
 .textarea {
+    margin-bottom: 8px;
+    padding: 16px;
     width: 100%;
     min-height: 50px;
     max-height: 200px;
     resize: vertical;
-    margin-bottom: 8px;
-    padding: 16px;
     border-radius: 3px;
     border: 1px solid #cccccc;
+    font-family: "Roboto";
 }
 
 .submit {
@@ -199,28 +198,33 @@ textarea::placeholder {
 }
 .close {
     position: absolute;
+    visibility: hidden;
+}
+.close+label {
     float: right;
     right: 10px;
     top: 71px;
     z-index: 1;
 }
-.close:hover::before,
-.close:hover::after {
+.close+label:hover::before,
+.close+label:hover::after {
     background-color: #949494;
 }
-.close::before,
-.close::after {
+.close+label::before,
+.close+label::after {
     content: '';
     position: absolute;
-    left: 6px;
     height: 13px;
     width: 2px;
     background-color: #b3b3b3;
+    right: 14px;
+    top: 71px;
+    z-index: 1;
 }
-.close::before {
+.close+label::before {
     transform: rotate(45deg);
 }
-.close::after {
+.close+label::after {
     transform: rotate(-45deg);
 }
 .close:checked {
@@ -300,6 +304,7 @@ textarea::placeholder {
 .submit06:hover {
     filter: drop-shadow(0px 2px 2.5px rgba(8, 118, 52, 0.35));
     background-color: #07be51;
+    cursor: pointer;
 }
 /* елементи */
 .element {
@@ -547,6 +552,7 @@ textarea::placeholder {
     filter: drop-shadow(0px 2px 2.5px rgba(15,40,126,0.35));
     background-color: #2857f4;
     word-wrap: none;
+    cursor: pointer;
 }
 .form-table .radio-knopka + label {
     padding-right: 24px;
@@ -604,13 +610,15 @@ hr {
 .back-page:hover {
     background-color: #85868d;
     color: #fff;
+    border: 1px solid #85868d;
+    cursor: pointer;
 }
 .make {
     padding: 16px;
     float: right;
     border-radius: 3px;
     background-color: #12d661;
-    border: 1px solid #ccc;
+    border: none;
     font-size: 14px;
     color: #ffffff;
     font-weight: 700;
@@ -618,6 +626,7 @@ hr {
 .make:hover {
     filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
     background-color: #07be51;
+    cursor: pointer;
 }
 .form-table2 tr:nth-child(2) td {
     padding: 24px 4px 41px;

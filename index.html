@@ -16,7 +16,7 @@
                     <p class="name-form">01. Проста форма</p>
                     <form action="">
                         <label><input class="input" type="text" placeholder="Введіть ім'я"></label>
-                        <label><input class="email" type="email" placeholder="Email"></label>
+                        <label><input class="email" type="email" placeholder="Email" required></label>
                         <label for="" class="select1">
                             <select class="select" name="sity">
                                 <option selected disabled value="vashe_misto">Ваше місто</option>
@@ -34,11 +34,7 @@
                     <input id="end" class="close" type="checkbox">
                     <label for="end"></label>
                     <p class="name-form">06. Фіксована форма</p>
-                    <form class="form06" action="">
-                        <div class="">
-                            
-                            
-                        </div>
+                    <form class="form06" action="send">
                         <p class="login"><label class="log"><span>Логін</span></label>
                             <input id="login" class="input06" type="text">
                         </p>
@@ -198,11 +194,11 @@
                             </td>
                             <td>
                                 <label for="mail">Ел. пошта</label>
-                                <input id="mail" class="input" type="text">
+                                <input id="mail" class="input" type="email">
                             </td>
                             <td>
                                 <label for="tel">Телефон</label>
-                                <input id="tel" class="input" type="text">
+                                <input id="tel" class="input" type="tel" placeholder="+38 ">
                             </td>
                         </tr>
                         <tr>
@@ -234,11 +230,11 @@
                             </td>
                             <td>
                                 <label for="bilding">Будинок</label>
-                                <input id="bilding" class="input" type="text">
+                                <input id="bilding" class="input" type="number">
                             </td>
                             <td>
                                 <label for="pos-index">Поштовий індек</label>
-                                <input id="pos-index" class="input" type="text">
+                                <input id="pos-index" class="input" type="number">
                             </td>
                         </tr>
                     </table>
