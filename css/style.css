@@ -227,7 +227,7 @@ textarea::placeholder {
 .close+label::after {
     transform: rotate(-45deg);
 }
-.close:checked {
+.close:checked+label {
     display: none;
 }
 .close:checked ~ .name-form,
